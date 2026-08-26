@@ -58,13 +58,14 @@
     "fact": "Menjaga sungai dari sampah membantu melindungi ekosistem air.",
     "question": "Apa yang bisa kita lakukan agar sungai tetap bersih?",
     "updated": "2026-08-01"
-  }
-]
-{
-  "id": "padi",
-  "title": "Padi",
-  "category": "tanaman",
-  "emoji": "🌾",
-  "description": "Padi adalah tanaman yang menghasilkan beras dan menjadi salah satu bahan makanan penting bagi banyak orang.",
-  "fact": "Padi tumbuh dengan baik di tempat yang mendapat cukup air dan sinar matahari.",
-  "question": "Apa makanan yang dihasilkan dari tanaman padi?"
+  },
+    {
+      "id": "padi",
+      "title": "Padi",
+      "category": "tanaman",
+      "emoji": "🌾",
+      "description": "Padi adalah tanaman yang menghasilkan beras dan menjadi salah satu bahan makanan penting bagi banyak orang.",
+      "fact": "Padi tumbuh dengan baik di tempat yang mendapat cukup air dan sinar matahari.",
+      "question": "Apa makanan yang dihasilkan dari tanaman padi?"
+    }
+  ]
