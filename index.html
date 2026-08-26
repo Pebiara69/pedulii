@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#176b5b">
+  <meta name="description" content="RimbaBelajar — perpustakaan mini untuk belajar tentang alam.">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+  <title>RimbaBelajar</title>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">🌿</div>
+      <div>
+        <strong>RimbaBelajar</strong>
+        <span>Belajar dari alam</span>
+      </div>
+    </div>
+    <button id="installBtn" class="install-btn" hidden>📲 Pasang</button>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">PERPUSTAKAAN MINI ALAM</p>
+        <h1>Yuk kenali dunia di sekitar kita 🌳</h1>
+        <p class="hero-text">Temukan fakta sederhana tentang tanaman, hewan, dan pemandangan. Bisa dipakai untuk belajar di rumah maupun di sekolah.</p>
+        <div class="search-wrap">
+          <span>🔎</span>
+          <input id="searchInput" type="search" placeholder="Cari mangga, kupu-kupu, sungai..." aria-label="Cari materi">
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">🌳<span>🦋</span><b>🏞️</b></div>
+    </section>
+
+    <section class="stats" aria-label="Statistik koleksi">
+      <div><strong id="totalCount">0</strong><span>Materi</span></div>
+      <div><strong id="plantCount">0</strong><span>Tanaman</span></div>
+      <div><strong id="animalCount">0</strong><span>Hewan</span></div>
+      <div><strong id="sceneCount">0</strong><span>Pemandangan</span></div>
+    </section>
+
+    <section class="toolbar">
+      <div>
+        <h2>Koleksi belajar</h2>
+        <p id="resultText">Memuat materi...</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filter materi">
+        <button class="filter active" data-category="semua">Semua</button>
+        <button class="filter" data-category="tanaman">🌱 Tanaman</button>
+        <button class="filter" data-category="hewan">🐾 Hewan</button>
+        <button class="filter" data-category="pemandangan">🏔️ Pemandangan</button>
+      </div>
+    </section>
+
+    <section id="cards" class="grid" aria-live="polite"></section>
+
+    <section id="emptyState" class="empty" hidden>
+      <div>🔍</div>
+      <h3>Materi belum ditemukan</h3>
+      <p>Coba kata kunci lain atau pilih filter “Semua”.</p>
+    </section>
+
+    <section class="offline-note">
+      <span>📡</span>
+      <div>
+        <strong>Mode belajar offline</strong>
+        <p>Setelah halaman dibuka saat online, RimbaBelajar dapat tetap digunakan saat koneksi terputus.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>🌿 RimbaBelajar · Belajar, menjaga, dan mencintai alam.</p>
+  </footer>
+
+  <dialog id="detailDialog">
+    <button class="close" id="closeDialog" aria-label="Tutup">×</button>
+    <div id="dialogContent"></div>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>

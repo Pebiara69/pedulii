@@ -1,0 +1,62 @@
+[
+  {
+    "id": "mangga",
+    "category": "tanaman",
+    "title": "Pohon Mangga",
+    "emoji": "🥭",
+    "description": "Pohon buah yang banyak tumbuh di daerah tropis.",
+    "fact": "Mangga membutuhkan cahaya matahari dan air yang cukup untuk tumbuh dengan baik.",
+    "question": "Bagian mana dari pohon mangga yang menghasilkan buah?",
+    "updated": "2026-08-01"
+  },
+  {
+    "id": "kelapa",
+    "category": "tanaman",
+    "title": "Pohon Kelapa",
+    "emoji": "🌴",
+    "description": "Tanaman tropis yang hampir semua bagiannya dapat dimanfaatkan.",
+    "fact": "Kelapa dapat tumbuh di wilayah pantai dan memiliki akar yang kuat.",
+    "question": "Sebutkan dua manfaat pohon kelapa.",
+    "updated": "2026-08-01"
+  },
+  {
+    "id": "kucing",
+    "category": "hewan",
+    "title": "Kucing",
+    "emoji": "🐈",
+    "description": "Mamalia yang sering hidup dekat manusia dan memiliki pendengaran tajam.",
+    "fact": "Kumis kucing membantu mengenali ruang di sekitarnya.",
+    "question": "Mengapa kucing memiliki kumis?",
+    "updated": "2026-08-01"
+  },
+  {
+    "id": "kupu",
+    "category": "hewan",
+    "title": "Kupu-kupu",
+    "emoji": "🦋",
+    "description": "Serangga yang mengalami metamorfosis dari ulat menjadi kupu-kupu.",
+    "fact": "Siklus hidupnya terdiri dari telur, larva, pupa, dan dewasa.",
+    "question": "Apa nama tahap sebelum kupu-kupu dewasa?",
+    "updated": "2026-08-01"
+  },
+  {
+    "id": "gunung",
+    "category": "pemandangan",
+    "title": "Pegunungan",
+    "emoji": "🏔️",
+    "description": "Bentang alam tinggi yang dapat menjadi habitat berbagai tumbuhan dan hewan.",
+    "fact": "Daerah pegunungan biasanya memiliki suhu lebih rendah daripada dataran rendah.",
+    "question": "Mengapa suhu di pegunungan cenderung lebih sejuk?",
+    "updated": "2026-08-01"
+  },
+  {
+    "id": "sungai",
+    "category": "pemandangan",
+    "title": "Sungai",
+    "emoji": "🏞️",
+    "description": "Aliran air alami yang penting bagi manusia, tumbuhan, dan hewan.",
+    "fact": "Menjaga sungai dari sampah membantu melindungi ekosistem air.",
+    "question": "Apa yang bisa kita lakukan agar sungai tetap bersih?",
+    "updated": "2026-08-01"
+  }
+]
