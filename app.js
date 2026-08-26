@@ -6,7 +6,7 @@ const searchInput=document.getElementById("searchInput");
 
 async function loadContent(){
   try{
-    const res=await fetch("data/content.json",{cache:"no-store"});
+    const res=await fetch("content.json",{cache:"no-store"});
     if(!res.ok) throw new Error("Gagal memuat data");
     state.items=await res.json();
     localStorage.setItem("rimbabelajar-content",JSON.stringify(state.items));
