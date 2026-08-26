@@ -20,14 +20,41 @@
     "updated": "2026-08-01"
   },
   {
-    "id": "kucing",
-    "category": "hewan",
-    "title": "Kucing",
-    "emoji": "🐈",
-    "description": "Mamalia yang sering hidup dekat manusia dan memiliki pendengaran tajam.",
-    "fact": "Kumis kucing membantu mengenali ruang di sekitarnya.",
-    "question": "Mengapa kucing memiliki kumis?",
-    "updated": "2026-08-01"
+    {
+  "id": "kucing",
+  "category": "hewan",
+  "title": "Kucing",
+  "emoji": "🐱",
+  "description": "Kucing adalah hewan mamalia yang banyak dipelihara sebagai teman di rumah. Kucing dikenal karena tubuhnya yang lincah, pendengarannya yang tajam, dan sifatnya yang suka menjelajah.",
+  "fact": "Kucing dapat tidur selama banyak waktu dalam sehari dan memiliki kemampuan mendengar suara yang sangat baik.",
+  "question": "Mengapa kucing memiliki kumis?",
+  "updated": "2026-08-01",
+  "details": [
+    "🐾 Kucing termasuk hewan mamalia.",
+    "👂 Pendengaran kucing sangat peka sehingga dapat mendengar suara yang sulit didengar manusia.",
+    "👀 Mata kucing membantu melihat dalam kondisi cahaya yang redup.",
+    "👃 Kucing memiliki indra penciuman yang kuat.",
+    "🧶 Kucing suka bermain, berlari, melompat, dan mengejar benda yang bergerak.",
+    "😴 Kucing membutuhkan banyak waktu untuk beristirahat dan tidur.",
+    "🐟 Kucing membutuhkan makanan yang sesuai dengan kebutuhan tubuhnya.",
+    "💧 Air bersih harus selalu tersedia untuk kucing.",
+    "🧼 Kucing sering membersihkan tubuhnya sendiri dengan menjilati bulunya.",
+    "📣 Suara 'meong' sering digunakan kucing untuk berkomunikasi dengan manusia.",
+    "🧭 Kumis kucing membantu mengenali keadaan di sekitarnya dan memperkirakan ruang yang dapat dilewatinya.",
+    "❤️ Kucing yang dirawat dengan baik dapat menjadi teman yang menyenangkan bagi manusia."
+  ],
+  "quiz": [
+    {
+      "question": "Apa yang digunakan kucing untuk membantu mengenali keadaan di sekitarnya?",
+      "answer": "Kumis"
+    },
+    {
+      "question": "Termasuk kelompok hewan apakah kucing?",
+      "answer": "Mamalia"
+    },
+    {
+      "question": "Apa suara yang sering digunakan kucing untuk berkomunikasi dengan manusia?",
+      "answer": "Meong"
   },
   {
     "id": "kupu",
