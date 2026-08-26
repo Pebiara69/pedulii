@@ -48,21 +48,55 @@ function render(){
 }
 function escapeHtml(s){return String(s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]))}
 function openDetail(id){
-  const x=state.items.find(i=>i.id===id); if(!x)return;
+  const x=state.items.find(i=>i.id===id);
+  if(!x)return;
+
+  const details=x.details||[];
+  const quiz=x.quiz||[];
+
   document.getElementById("dialogContent").innerHTML=`
     <div class="detail">
       <div class="detail-emoji">${x.emoji||"🌿"}</div>
       <div class="detail-category">${label(x.category)}</div>
+
       <h2>${escapeHtml(x.title)}</h2>
       <p>${escapeHtml(x.description)}</p>
-      <div class="fact"><strong>💡 Fakta menarik</strong><br>${escapeHtml(x.fact)}</div>
-      <div class="question">❓ Pertanyaan belajar</div>
-      <p>${escapeHtml(x.question)}</p>
-    </div>`;
+
+      <div class="fact">
+        <strong>💡 Fakta menarik</strong>
+        <p>${escapeHtml(x.fact||"Belajar hal menarik tentang alam!")}</p>
+      </div>
+
+      <div class="question">
+        <strong>❓ Pertanyaan belajar</strong>
+        <p>${escapeHtml(x.question||"Apa yang kamu pelajari hari ini?")}</p>
+      </div>
+
+      ${details.length?`
+        <div class="detail-extra">
+          <h3>📚 Yuk kenali lebih jauh</h3>
+          <ul>
+            ${details.map(d=>`<li>${escapeHtml(d)}</li>`).join("")}
+          </ul>
+        </div>
+      `:""}
+
+      ${quiz.length?`
+        <div class="quiz">
+          <h3>🧠 Kuis kecil</h3>
+          ${quiz.map((q,i)=>`
+            <div class="quiz-item">
+              <strong>${i+1}. ${escapeHtml(q.question)}</strong>
+              <p>💡 Jawaban: ${escapeHtml(q.answer)}</p>
+            </div>
+          `).join("")}
+        </div>
+      `:""}
+    </div>
+  `;
+
   document.getElementById("detailDialog").showModal();
 }
-document.querySelectorAll(".filter").forEach(btn=>btn.addEventListener("click",()=>{
-  document.querySelectorAll(".filter").forEach(b=>b.classList.remove("active"));
   btn.classList.add("active"); state.category=btn.dataset.category; render();
 }));
 searchInput.addEventListener("input",e=>{state.query=e.target.value;render()});
